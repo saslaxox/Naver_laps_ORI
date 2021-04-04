@@ -1,0 +1,21 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+a {text-decoration: none;}
+a:hover {color:rgb(100,100,100);}
+a:visited {color:rgb(100,100,100);}
+
+div, ul, li {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+ol, ul ,li, dl {
+   list-style:none;
+   list-style-type:none;
+}
+
+button {
+   border: 0;
+   background: none;
+   cursor: pointer;
+}
