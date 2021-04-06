@@ -2,6 +2,7 @@
 /* Layout Style */
 
 body {
+   font-family: "NotoSansKR-Regular", 'NanumBarunGothic', sans-serif; 
    color:rgb(100,100,100);
 }
 
@@ -30,19 +31,10 @@ body {
    font-family: "Roboto-Bold";
    src: url("../font/Roboto-Bold.woff") format("woff"); }
    
+@font-face {
+   font-family: "Roboto-Regular";
+   src: url("../font/Roboto-Regular.woff") format("woff"); }
+   
+   
+   
 
-body {
-   font-family: "NotoSansKR-Regular", 'NanumBarunGothic', sans-serif; 
-}
-
-
-
-
-
-
-/* Color Style */
-
-
-
-
-/* Margin & Padding */

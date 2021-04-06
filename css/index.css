@@ -1,3 +1,540 @@
 
-header {width: 100%;}
+body {
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+.wrap {
+   width: 100%;
+   height: 100%;
+}  
+
+.wrap .gnb {
+   position: absolute;
+   height: 80px;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 130;
+}
+
+.wrap .gnb h1 a {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.wrap .gnb h1 {
+   position: absolute;
+   top: 30px;
+   left: 30px;
+   display: block;
+   width: 185px;
+   height: 19px;
+   background-image: url(../img/NAVERLABS_LOGO_WHITE_v2.png);
+   background-size: 185px 19px;
+}
+
+.wrap .gnb .btn_language {
+   position: absolute;
+   top: 25px;
+   right: 30px;
+   display: block;
+   width: 88px;
+   height: 30px;
+   padding-top: 7px;
+   border: 1px solid;
+   border-color: rgba(255,255,255,0.5);
+   color: #fff;
+   font-size: 14px;
+   line-height: 1.2;
+   text-align: center;
+}
+
+
+/* SECTION 공통 사항 */
+
+.section {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.section .container {
+   position: relative;
+   margin: 0 auto;
+   width: 960px;
+   height: 100%;
+   z-index: 120;
+}
+.section .container .text_box {
+   position: relative;
+}  
+section .container .text_box .title {
+   margin: 14px 0 32px 0;
+   font-size: 52px;
+   line-height: 1.31;
+   font-family: 'Roboto-Bold', sans-serif;
+   font-weight: bold;
+}
+.section .container .text_box .sub_title {
+   font-size: 14px;
+   line-height: 1.29;
+}
+.section .container .text_box .info {
+   margin: 14px 0 56px 0;
+   font-size: 14px;
+   line-height: 1.71;
+   font-family: 'NotoSansKR-Regular', sans-serif;
+}
+.section .video_box img {
+   vertical-align: top;
+   height: auto;
+}
+.section .container .text_box .category {
+   margin-bottom: 16px;
+   font-size: 14px;
+   line-height: 1.29;
+   color: rgb(56, 66, 187);
+}
+
+.section .container .btn_box{
+   display: block;
+   width: 100%;
+}
+.section .container .btn_box a {
+   display: block;
+   float: left;
+   width: 160px;
+   height: 48px;
+   padding: 14px 0;
+   font-size: 14px;
+   line-height: 1.29;
+   border: 1px solid #000;
+   text-align: center;
+}
+
+/* 인접 형제 선택자 사용 : 
+인접 형제 선택자는 선택자 사이를 + 를 사용하여 나타냅니다.
+앞 요소 바로 뒤의 뒷 요소를 선택합니다. */
+.section .container .btn_box a + a {
+   margin-left: 8px;
+}
+
+.section .container .text_box_notice {
+   position: absolute;
+   bottom: 16px;
+   left: 0;
+   display: flex;
+}
+
+.section .container .text_box_notice strong {
+   display: block;
+   margin-right: 16px;
+   font-size: 12px;
+   line-height: 1.17;
+}
+
+.section .container .text_box_notice ul {
+   display: flex;
+}
+.section .container .text_box_notice ul li {
+   display: block;
+   font-size: 12px;
+   line-height: 1.17;
+   margin-left: 12px;
+}
+
+/* SECTION 1 */
+
+.section1 {
+   width: 100%;
+   /* 자식 요소들이 전부 absoulte속성이라서 그런건지 height값을 %로 주면 내용이 안보이던데 사이트 개발자도구에선 %로 되어있더라구요.. 저는 뭐가 문제였을까요 */
+   height: 100vh;
+   overflow: hidden;
+   background-color: #434cc1;
+}
+
+.section1 .container .text_box {
+   position: absolute;
+   top: 50%;
+   height: auto;
+   margin-top: -200px;
+   z-index: 100;
+}
+.section1 .container .text_box .title {
+   margin-bottom: 44px;
+   font-size: 64px;
+   line-height: 1.2;
+   color: rgb(255,255,255)
+}
+
+.section1 .container .text_box .info {
+   margin-bottom: 0;
+   color: rgba(255,255,255,0.7);
+}
+.section1 .container .btn_scroll {
+   display: block;
+   width: 100%;
+   position: absolute;
+   bottom: 54px;
+   z-index: 1000;
+   text-align: center;
+}
+.section1 .container .btn_scroll a {
+   letter-spacing: 1.5px;
+   font-size: 13px;
+   color: rgb(255,255,255);
+   font-family: 'Roboto-Regular';
+}
+.section1 .container .btn_scroll a:after {
+   content: '';
+   position: absolute;
+   top: 22px;
+   left: 50%;
+   margin-left: -12px;
+   display: block;
+   width: 24px;
+   height: 24px;
+   background: url(../img/img_arrow_down.png) no-repeat;
+   background-size: 24px 24px;
+   -webkit-background-size: 24px 24px;
+}
+.section1 .video_box img {
+   height: 526px;
+   width: 526px;
+}
+.section1 .video_box {
+   position: absolute;
+   right: 50%;
+   height: 526px;
+   width: 526px;
+   margin: -660px -495px 0 0;
+}
+
+/* SECTION 2 */
+
+.section2 {
+   height: 842px;
+   background-color: rgb(240, 242, 246);
+}
+.section2 .container .text_box {
+   padding-top: 96px;
+   text-align: center;
+}
+.section2 .container .text_box .title {
+   font-size: 48px;
+   line-height: 1.25;
+   color: rgb(56, 66, 187);
+   margin-bottom: 24px;
+}
+.section2 .container .text_box .sub_title {
+   color:rgb(50, 50, 50);
+}
+.section2 .container .text_box .info {
+   color:rgb(100, 100, 100);
+   font-size: 14px;
+   line-height: 1.71;
+}
+.section2 .container .video_box .inner img {
+   display: block;
+   width: 800px;
+   height: auto;
+   margin: 0 auto 0 163px;
+   margin-left: 133px;
+}
+
+/* SECTION 3 */
+
+.section3 {
+   height: 637px;
+   background-color: rgb(255, 255, 255);
+}
+
+.section3 .container .text_box {
+   padding: 96px 0;
+}
+
+.section3 .container .text_box .title {
+   color: rgb(50, 50, 50);
+   font-size: 42px;
+}
+
+.section3 .container .text_box .sub_title {
+   color: rgb(50, 50, 50);
+}
+
+.section3 .container .text_box .info {
+   color: rgb(100, 100, 100);
+   font-size: 14px;
+   line-height: 1.71;
+}
+.section3 .container .btn_box a {
+   color: #3842bb;
+   border-color: #3842bb;
+}
+.section3 .container .text_box_notice {
+   color: rgb(150, 150, 150);
+}
+.section3 .container .video_box {
+   position: absolute;
+   top: 96px;
+   right: 0;
+}
+.section3 .container .video_box .inner img {
+   display: block;
+   width: 560px;
+   height: 445px;
+}
+
+/* SECTION 4 */
+
+.section4 {
+   height: 687px;
+   background-color: rgb(65, 76, 191);
+}
+.section4 .container .text_box {
+   padding: 96px 0;
+}
+.section4 .container .text_box .right_box {
+   width: 360px;
+   float: right;
+}
+.section4 .container .text_box .category {
+   color: rgb(97, 244, 255);
+}
+.section4 .container .text_box .title {
+   color: rgb(255, 255, 255);
+   font-size: 42px;
+   line-height: 1.33;
+}
+.section4 .container .text_box .sub_title {
+   color: rgb(255, 255, 255);
+}
+.section4 .container .text_box .info {
+   color: rgba(255,255,255,0.7);
+}
+.section4 .container .btn_box a {
+   color: rgb(255, 255, 255);
+   border-color: rgb(255, 255, 255);
+}
+.section4 .container .video_box {
+   position: absolute;
+   top: 96px;
+   left: 0;
+}
+.section4 .container .video_box .inner img {
+   display: block;
+   width: 560px;
+   height: 445px;
+}
+
+/* SECTION 6 */
+
+.section6 {
+   height: 791px;
+   background-color: rgb(24, 28, 45);
+}
+.section6 .container .text_box .category {
+   color: rgb(98, 110, 255);
+}
+.section6 .container .text_box .title {
+   color: rgb(255, 255, 255);
+   font-size: 42px;
+   line-height: 1.33;
+}
+.section6 .container .text_box .info {
+   color: rgba(255,255,255,0.7);
+}
+.section6 .container .text_box_notice {
+   color: rgb(150, 150, 150);
+}
+.section6 .container .btn_box a {
+   color: rgb(255, 255, 255);
+   border-color: #3842bb;
+   background-color: #3842bb;
+}
+.section6 .container .text_box {
+   padding-top: 96px;
+}
+.section6 .container .text_box {
+   height: auto;
+}
+.section6 .container .video_box .inner img {
+   display: block;
+   width: 429px;
+   height: 240px;
+}
+.section6 .container .text_box .video_box .inner {
+   position: relative;
+}
+.section6 .container .text_box .video_box {
+   position: absolute;
+   top: 96px;
+   right: 0;
+}
+.section6 .container .text_box.type2 .video_box {
+   position: absolute;
+   top: 96px;
+   left: 0;
+}
+.section6 .container .text_box.type2 {
+   padding-top: 64px;
+}
+.section6 .container .text_box.type2 .right_box {
+   float: right;
+}
+
+/* SECTION 7 */
+
+.section7 {
+   height: 430px;
+   background: url(../img/img_section7.png) no-repeat;
+   background-size: cover;
+   background-position: 50% 0;
+}
+
+.section7 .container .text_box {
+   padding: 96px 0;
+   text-align: center;
+}
+
+.section7 .container .text_box .title {
+   margin:0 0 16px 0;
+   font-size: 42px;
+   line-height: 1.43;
+   color: rgb(255, 255, 255);
+}
+.section7 .container .text_box .sub_title {
+   color: rgb(255, 255, 255);
+}
+.section7 .container .text_box .info {
+   margin: 8px 0 42px 0;
+   color: rgba(255,255,255,0.7);
+}
+.section7 .container .btn_box a {
+   color: rgb(255, 255, 255);
+   border-color: rgb(255, 255, 255);
+}
+
+.section7 .container .text_box .btn_box a {
+   float: none;
+   width: 160px;
+   margin: 0 auto;
+}
+
+/* SECTION 8 */
+
+.section8 {
+   height: 498px;
+   background-color: rgb(240, 242, 246);
+}
+
+.section8 .container .list_box{
+   padding-top: 96px;
+}
+
+.section8 .container .list_box .list_title{
+   display:block;
+   margin-bottom: 24px;
+   font-size: 32px;
+   line-height: 1.25;
+   color: rgb(50, 50, 50);
+   font-family: 'Roboto-Bold', sans-serif;
+}
+.section8 .container .list_box ul{
+   overflow: hidden;
+   width: 960px;
+}
+.section8 .container .list_box ul li{
+   width: 304px;
+   float: left;
+   margin-left: 24px;
+}
+.section8 .container .list_box ul li:first-child{
+   margin-left: 0;
+}
+.section8 .container .list_box ul li a{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+.section8 .container .list_box ul li a .img_box {
+   width: 304px;
+   height: 172px;
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 16px;
+}
+
+.section8 .container .list_box ul li a .img_box img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   vertical-align: top;
+}
+.section8 .container .list_box ul li a .list_info {
+   font-size: 14px;
+   line-height: 1.71;
+   color: rgb(50, 50, 50);
+}
+
+/* FOOTER */
+
+#footer {
+   position: relative;
+   z-index: 2;
+   background: rgb(255, 255, 255);
+}
+#footer .inner {
+   overflow: hidden;
+   width: auto;
+   padding: 30px 30px 34px;
+   box-sizing: border-box;
+}
+#footer .logo {
+   float: left;
+   width: 127px;
+   padding: 2px 0 0 0;
+}
+#footer .logo a {
+   display: block;
+   overflow: hidden;
+   height: 13px;
+   line-height: 999px;
+   background: url(../img/logo3.png) no-repeat;
+   background-size: 100%;
+}
+#footer .menu_list {
+   float: left;
+   margin: -5px 0 0 55px;
+}
+#footer .menu_list li {
+   float: left;
+   margin-left: 16px;
+}
+#footer .menu_list li:first-child {
+   margin-left: 0;
+}
+#footer .menu_list a {
+   display: block;
+   font-size: 13px;
+   font-weight: 700;
+   color:  rgb(103, 103, 103);
+   padding: 5px 7px;
+   font-family: 'NotoSans',Dotum,'돋움',sans-serif;
+}
+#footer .menu_list a:hover{
+   text-decoration: none;
+}
+#footer .copy {
+   float: right;
+   font-size: 12px;
+   font-weight: 400;
+   color: rgb(199, 199, 199);
+}
+
 
